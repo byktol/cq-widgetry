@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <basic
+                jcr:primaryType="cq:Panel"
+                title="Basic">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <faq
+                        jcr:primaryType="cq:Widget"
+                        xtype="custommultifield">
+                        <fieldConfig jcr:primaryType="nt:unstructured">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <question
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Question"
+                                    name="./questions"
+                                    xtype="textfield"/>
+                                <answer
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Answer"
+                                    name="./answers"
+                                    xtype="textarea"/>
+                            </items>
+                        </fieldConfig>
+                    </faq>
+                </items>
+            </basic>
+        </items>
+    </items>
+</jcr:root>
